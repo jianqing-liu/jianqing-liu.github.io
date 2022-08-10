@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Lab - Jianqing Liu</title>
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+	<link id="wsite-base-style" rel="stylesheet" type="text/css"
+		href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234"
+		media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="files/main_style.css?1516759767" title="wsite-theme-css" />
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,700&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+	<link
+		href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Coustard&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+	<style type='text/css'>
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {
+			font-family: "Quattrocento" !important;
+			font-weight: 400 !important;
+		}
+
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {}
+
+		.wsite-elements.wsite-footer div.paragraph,
+		.wsite-elements.wsite-footer p,
+		.wsite-elements.wsite-footer .product-block .product-title,
+		.wsite-elements.wsite-footer .product-description,
+		.wsite-elements.wsite-footer .wsite-form-field label,
+		.wsite-elements.wsite-footer .wsite-form-field label {}
+
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {}
+
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {}
+
+		.wsite-elements.wsite-footer h2,
+		.wsite-elements.wsite-footer .product-long .product-title,
+		.wsite-elements.wsite-footer .product-large .product-title,
+		.wsite-elements.wsite-footer .product-small .product-title {}
+
+		#wsite-title {
+			font-family: "Verdana" !important;
+			text-transform: uppercase !important;
+		}
+
+		.wsite-menu-default a {
+			font-family: "Ubuntu" !important;
+			font-weight: 700 !important;
+			text-transform: uppercase !important;
+		}
+
+		.wsite-menu a {}
+
+		.wsite-image div,
+		.wsite-caption {
+			font-family: "Coustard" !important;
+		}
+
+		.galleryCaptionInnerText {}
+
+		.fancybox-title {}
+
+		.wslide-caption-text {}
+
+		.wsite-phone {}
+
+		.wsite-headline,
+		.wsite-header-section .wsite-content-title {}
+
+		.wsite-headline-paragraph,
+		.wsite-header-section .paragraph {}
+
+		.wsite-button-inner {}
+
+		.wsite-not-footer blockquote {}
+
+		.wsite-footer blockquote {}
+
+		.blog-header h2 a {}
+
+		#wsite-content h2.wsite-product-title {}
+
+		.wsite-product .wsite-product-price a {}
+
+		@media screen and (min-width: 767px) {
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {}
+
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {}
+
+			.wsite-elements.wsite-footer div.paragraph,
+			.wsite-elements.wsite-footer p,
+			.wsite-elements.wsite-footer .product-block .product-title,
+			.wsite-elements.wsite-footer .product-description,
+			.wsite-elements.wsite-footer .wsite-form-field label,
+			.wsite-elements.wsite-footer .wsite-form-field label {}
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {}
+
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {}
+
+			.wsite-elements.wsite-footer h2,
+			.wsite-elements.wsite-footer .product-long .product-title,
+			.wsite-elements.wsite-footer .product-large .product-title,
+			.wsite-elements.wsite-footer .product-small .product-title {}
+
+			#wsite-title {}
+
+			.wsite-menu-default a {}
+
+			.wsite-menu a {}
+
+			.wsite-image div,
+			.wsite-caption {}
+
+			.galleryCaptionInnerText {}
+
+			.fancybox-title {}
+
+			.wslide-caption-text {}
+
+			.wsite-phone {}
+
+			.wsite-headline,
+			.wsite-header-section .wsite-content-title {}
+
+			.wsite-headline-paragraph,
+			.wsite-header-section .paragraph {}
+
+			.wsite-button-inner {}
+
+			.wsite-not-footer blockquote {}
+
+			.wsite-footer blockquote {}
+
+			.blog-header h2 a {}
+
+			#wsite-content h2.wsite-product-title {}
+
+			.wsite-product .wsite-product-price a {}
+		}
+	</style>
+
+	<script>
+		var STATIC_BASE = '//cdn1.editmysite.com/';
+		var ASSETS_BASE = '//cdn2.editmysite.com/';
+		var STYLE_PREFIX = 'wsite';
+	</script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+	<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+	<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script>
+	<script type="text/javascript">_W.configDomain = "www.weebly.com";</script>
+	<script>_W.relinquish && _W.relinquish()</script>
+	<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+	<script> _W.themePlugins = [];</script>
+	<script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script>
+	<script type="text/javascript">
+	</script>
+
+
+</head>
+
+<body class="no-header-page page-has-banner  wsite-theme-light  wsite-page-lab">
+	<div class="wrapper">
+		<div class="birdseye-header">
+			<div class="nav-wrap">
+				<div class="container">
+					<div class="logo"><span class="wsite-logo">
+
+							<a href="index.html">
+
+								<span id="wsite-title">Jianqing Liu</span>
+
+							</a>
+
+						</span></div>
+					<div class="nav desktop-nav">
+						<ul class="wsite-menu-default">
+							<li id="pg201573907284626506" class="wsite-menu-item-wrap">
+								<a href="index.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Home</font>
+								</a>
+
+							</li>
+							<li id="active" class="wsite-menu-item-wrap">
+								<a href="lab.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Lab</font>
+								</a>
+
+							</li>
+							<li id="pg149021219515022802" class="wsite-menu-item-wrap">
+								<a href="research.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Research</font>
+								</a>
+
+							</li>
+							<li id="pg805442045814651203" class="wsite-menu-item-wrap">
+								<a href="teaching.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Teaching</font>
+								</a>
+
+							</li>
+							<li id="pg134465023545905763" class="wsite-menu-item-wrap">
+								<a href="awards.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Awards</font>
+								</a>
+
+							</li>
+							<li id="pg713992104549235140" class="wsite-menu-item-wrap">
+								<a href="activity.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Activity</font>
+								</a>
+
+							</li>
+						</ul>
+					</div>
+					<label class="hamburger"><span></span></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-wrap">
+			<div class="container">
+				<div class="content-wrap">
+					<div id="wsite-content" class="wsite-elements wsite-not-footer">
+
+
+
+						<h2 class="wsite-content-title" style="text-align:left;">Prospective Students</h2>
+
+						<div>
+							<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+							<hr class="styled-hr" style="width:100%;">
+							</hr>
+							<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+						</div>
+
+						<div style="text-align:left; font-family: 'Open Sans', sans-serif;">
+							<font size="4">
+								<font color="#000000">I am always looking for self-motivated PhD students who are
+									interested
+									in <em>wireless communications & networking, security, and privacy-enhancing
+										techniques</em>. Full
+									financial support in the form of research assistantship (RA) or teaching
+									assistantship (TA) will be offered for qualified
+									students. If interested, please send me your <u>CV</u>, <u>transcript(s)</u>, and
+									<u>sample publications</u>
+									if any. Please refer to <a
+										href="https://www.csc.ncsu.edu/academics/graduate/future-students.php">this
+										link</a>
+									for the GRE/TOEFL requirements and other application-related information.
+								</font>
+							</font>
+
+						</div> <br /><br />
+
+
+
+
+
+
+						<h2 class="wsite-content-title" style="text-align:left;">Current Students</h2>
+
+						<!-- this is to draw a space line -->
+						<div>
+							<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+							<hr class="styled-hr" style="width:100%;">
+							</hr>
+							<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+						</div>
+						<div class="wsite-spacer" style="height:10px;"></div>
+
+
+
+						<div class="paragraph" style="text-align:left;">
+							<li>
+								<font color="#000000" size="4"><strong>PhD students</strong></font>
+							</li>
+						</div>
+						<!-- two columns text -->
+					</div>
+
+
+					<div>
+						<div class="wsite-multicol">
+							<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+								<table class="wsite-multicol-table">
+									<tbody class="wsite-multicol-tbody">
+										<tr class="wsite-multicol-tr">
+											<td class="wsite-multicol-col"
+												style="width:10.022304832714%; padding:0 15px;">
+
+												<div>
+													<div class="wsite-image wsite-image-border-border-width:0 "
+														style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+														<a>
+															<img src="uploads/steven.jpeg" alt="Picture"
+																style="width:auto;max-width:100%" />
+														</a>
+														<div style="display:block;font-size:90%"></div>
+													</div>
+												</div>
+											</td>
+											<td class="wsite-multicol-col"
+												style="width:73.977695167286%; padding:0 15px;">
+												<div class="paragraph" style="text-align:left">
+													<font size="4">
+														<font color="#000000">Steven Puckett (Fall 2021 - )<br />MS.,
+															Electrical Engineering, University of Alabama at
+															Birmingham<br />Email: scp0019 at uah dot edu <br />Research
+															Interests: Low-power IoT and Edge Intelligence <br />
+															*co-advise
+															with Dr. Thomas Morris at the University of Alabama in
+															Huntsville</font>
+													</font>
+												</div>
+							</div>
+							</td>
+							</tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+				</div><br /><br />
+
+
+				<div>
+					<div class="wsite-multicol">
+						<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+							<table class="wsite-multicol-table">
+								<tbody class="wsite-multicol-tbody">
+									<tr class="wsite-multicol-tr">
+										<td class="wsite-multicol-col" style="width:10.022304832714%; padding:0 15px;">
+
+											<div>
+												<div class="wsite-image wsite-image-border-border-width:0 "
+													style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+													<a>
+														<img src="uploads/punya.jpg" alt="Picture"
+															style="width:auto;max-width:100%" />
+													</a>
+													<div style="display:block;font-size:90%"></div>
+												</div>
+											</div>
+										</td>
+										<td class="wsite-multicol-col" style="width:73.977695167286%; padding:0 15px;">
+											<div class="paragraph" style="text-align:left">
+												<font size="4">
+													<font color="#000000">Punya Satish Gouda (Fall 2021 - )<br />MS.,
+														Electrical Engineering, University of Alabama in Huntsville
+														<br />Email: pgouda at ncsu dot edu <br />Research Interests:
+														Wireless Communications, Signal Processing
+													</font>
+												</font>
+											</div>
+						</div>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div><br /><br />
+
+			<div>
+				<div class="wsite-multicol">
+					<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+						<table class="wsite-multicol-table">
+							<tbody class="wsite-multicol-tbody">
+								<tr class="wsite-multicol-tr">
+									<td class="wsite-multicol-col" style="width:10.022304832714%; padding:0 15px;">
+
+										<div>
+											<div class="wsite-image wsite-image-border-border-width:0 "
+												style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+												<a>
+													<img src="uploads/anonymous.png" alt="Picture"
+														style="width:auto;max-width:100%" />
+												</a>
+												<div style="display:block;font-size:90%"></div>
+											</div>
+										</div>
+									</td>
+									<td class="wsite-multicol-col" style="width:73.977695167286%; padding:0 15px;">
+										<div class="paragraph" style="text-align:left">
+											<font size="4">
+												<font color="#000000">Zhizhen Li (Fall 2022 - )<br />MS.,
+													Computer Engineering, Georgia Institute of Technology
+													<br />Email: zli92 at ncsu dot edu <br />Research Interests:
+													Quantum Information and Communications<br />* in lab rotation
+												</font>
+											</font>
+										</div>
+					</div>
+					</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div><br /><br />
+
+
+		<div>
+			<div class="wsite-multicol">
+				<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+					<table class="wsite-multicol-table">
+						<tbody class="wsite-multicol-tbody">
+							<tr class="wsite-multicol-tr">
+								<td class="wsite-multicol-col" style="width:10.022304832714%; padding:0 15px;">
+
+									<div>
+										<div class="wsite-image wsite-image-border-border-width:0 "
+											style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/anonymous.png" alt="Picture"
+													style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</td>
+								<td class="wsite-multicol-col" style="width:73.977695167286%; padding:0 15px;">
+									<div class="paragraph" style="text-align:left">
+										<font size="4">
+											<font color="#000000">Stuart Pelletier (Fall 2022 - )<br />MS.,
+												Computer Science, NC State University
+												<br />Email: sopellet at ncsu dot edu <br />Research Interests:
+												Quantum Information and Communications<br />* in lab rotation
+											</font>
+										</font>
+									</div>
+				</div>
+				</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	</div><br /><br />
+
+	<div>
+		<div class="wsite-multicol">
+			<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+				<table class="wsite-multicol-table">
+					<tbody class="wsite-multicol-tbody">
+						<tr class="wsite-multicol-tr">
+							<td class="wsite-multicol-col" style="width:10.022304832714%; padding:0 15px;">
+
+								<div>
+									<div class="wsite-image wsite-image-border-border-width:0 "
+										style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+										<a>
+											<img src="uploads/anonymous.png" alt="Picture"
+												style="width:auto;max-width:100%" />
+										</a>
+										<div style="display:block;font-size:90%"></div>
+									</div>
+								</div>
+							</td>
+							<td class="wsite-multicol-col" style="width:73.977695167286%; padding:0 15px;">
+								<div class="paragraph" style="text-align:left">
+									<font size="4">
+										<font color="#000000">Angela Zhang (Fall 2022 - )<br />BS.,
+											Industrial Engineering, Purdue University
+											<br />Email: azhang25 at ncsu dot edu <br />Research Interests:
+											Differential Privacy<br />* in lab rotation
+										</font>
+									</font>
+								</div>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div><br /><br />
+
+
+	<div class="paragraph" style="text-align:left;">
+		<li>
+			<font color="#000000" size="4"><strong>MS students</strong></font>
+		</li>
+	</div><br /><br />
+
+
+	<div class="paragraph" style="text-align:left;">
+		<li>
+			<font color="#000000" size="4"><strong>Undergraduate students</strong></font>
+		</li>
+	</div><br /><br />
+	<!-- two columns text -->
+
+
+
+
+	<h2 class="wsite-content-title" style="text-align:left;">Alumni</h2>
+	<!-- this is to draw a space line -->
+	<div>
+		<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+		<hr class="styled-hr" style="width:100%;">
+		</hr>
+		<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+	</div>
+	<div class="wsite-spacer" style="height:10px;"></div><br />
+
+
+	<div>
+		<div class="wsite-multicol">
+			<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+				<table class="wsite-multicol-table">
+					<tbody class="wsite-multicol-tbody">
+						<tr class="wsite-multicol-tr">
+							<td class="wsite-multicol-col" style="width:10.022304832714%; padding:0 15px;">
+
+								<div>
+									<div class="wsite-image wsite-image-border-border-width:0 "
+										style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+										<a>
+											<img src="uploads/sarkar.jpg" alt="Picture"
+												style="width:auto;max-width:100%" />
+										</a>
+										<div style="display:block;font-size:90%"></div>
+									</div>
+								</div>
+							</td>
+							<td class="wsite-multicol-col" style="width:73.977695167286%; padding:0 15px;">
+								<div class="paragraph" style="text-align:left">
+									<font size="4">
+										<font color="#000000">Sopan Sarkar (Fall 2018 - Summer 2020)<br />Degree: MS in
+											Computer Engineering<br />Thesis: Radio-Layer Vulnerabilities of Bluetooth
+											Low Energy: Exploitation and Attacks <br />Initial Placement: PhD at
+											University of Arizona (Advisor: Dr. Marwan Krunz)</font>
+									</font>
+								</div>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div><br />
+
+	<div>
+		<div class="wsite-multicol">
+			<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+				<table class="wsite-multicol-table">
+					<tbody class="wsite-multicol-tbody">
+						<tr class="wsite-multicol-tr">
+							<td class="wsite-multicol-col" style="width:10.022304832714%; padding:0 15px;">
+
+								<div>
+									<div class="wsite-image wsite-image-border-border-width:0 "
+										style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+										<a>
+											<img src="uploads/siota.jpg" alt="Picture"
+												style="width:auto;max-width:100%" />
+										</a>
+										<div style="display:block;font-size:90%"></div>
+									</div>
+								</div>
+							</td>
+							<td class="wsite-multicol-col" style="width:73.977695167286%; padding:0 15px;">
+								<div class="paragraph" style="text-align:left">
+									<font size="4">
+										<font color="#000000">William Siota (Fall 2018 - Spring 2019)<br />Degree: BS in
+											Computer Engineering<br /> Initial Placement: Software Developer at Western
+											Digital, Colorado Springs, CO</font>
+									</font>
+								</div>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div><br /><br />
+
+
+
+
+
+	<h2 class="wsite-content-title" style="text-align:left;">Useful Links</h2>
+
+	<div>
+		<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+		<hr class="styled-hr" style="width:100%;">
+		</hr>
+		<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+	</div>
+
+	<div class="paragraph" style="text-align:left">
+		<ul>
+			<li><a target="_blank"
+					href="http://matt-welsh.blogspot.com/2016/04/why-i-gave-your-paper-strong-reject.html">Why I gave
+					your paper a strong reject?</a> by Dr.&nbsp;Matt Welsh</li>
+		</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div><!-- end main-wrap -->
+
+	<div class="footer-wrap">
+		<div class="container">
+			<div class="footer">
+				<div class='wsite-elements wsite-footer'>
+					<div class="paragraph" style="text-align:center;">Copyright &copy; Jianqing Liu | <em>"You must be
+							the change you wish to see in the world."</em></div>
+				</div>
+			</div>
+		</div><!-- end container -->
+	</div><!-- end footer-wrap -->
+	</div><!-- /.wrapper -->
+
+	<div id="navMobile" class="nav mobile-nav">
+		<ul class="wsite-menu-default">
+			<li id="pg201573907284626506" class="wsite-menu-item-wrap">
+				<a href="index.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Home</font>
+				</a>
+
+			</li>
+			<li id="active" class="wsite-menu-item-wrap">
+				<a href="lab.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Lab</font>
+				</a>
+
+			</li>
+			<li id="pg149021219515022802" class="wsite-menu-item-wrap">
+				<a href="research.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Research</font>
+				</a>
+
+			</li>
+			<li id="pg805442045814651203" class="wsite-menu-item-wrap">
+				<a href="teaching.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Teaching</font>
+				</a>
+
+			</li>
+			<li id="pg134465023545905763" class="wsite-menu-item-wrap">
+				<a href="awards.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Awards</font>
+				</a>
+
+			</li>
+			<li id="pg713992104549235140" class="wsite-menu-item-wrap">
+				<a href="activity.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Activity</font>
+				</a>
+
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="files/theme/plugins.js"></script>
+	<script type="text/javascript" src="files/theme/custom.js"></script>
+
+	<!-- Start of StatCounter Code for Weebly -->
+	<script type="text/javascript">
+		var sc_project = 10803653;
+		var sc_invisible = 1;
+		var sc_security = "30e41485";
+		var scJsHost = (("https:" == document.location.protocol) ?
+			"https://secure." : "http://www.");
+		document.write("<sc" + "ript type='text/javascript' src='" +
+			scJsHost +
+			"statcounter.com/counter/counter.js'></" + "script>");
+	</script>
+	<noscript>
+		<div class="statcounter"><a title="weebly
+analytics" href="http://statcounter.com/weebly/" target="_blank"><img class="statcounter"
+					src="http://c.statcounter.com/10803653/0/30e41485/1/" alt="weebly analytics"></a></div>
+	</noscript>
+	<!-- End of StatCounter Code for Weebly -->
+</body>
+
+</html>

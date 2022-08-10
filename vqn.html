@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>VQN - Jianqing Liu</title>
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+	<link id="wsite-base-style" rel="stylesheet" type="text/css"
+		href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234"
+		media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="files/main_style.css?1516759767" title="wsite-theme-css" />
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,700&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+	<link
+		href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Coustard&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+	<style type='text/css'>
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {
+			font-family: "Quattrocento" !important;
+			font-weight: 400 !important;
+		}
+
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {}
+
+		.wsite-elements.wsite-footer div.paragraph,
+		.wsite-elements.wsite-footer p,
+		.wsite-elements.wsite-footer .product-block .product-title,
+		.wsite-elements.wsite-footer .product-description,
+		.wsite-elements.wsite-footer .wsite-form-field label,
+		.wsite-elements.wsite-footer .wsite-form-field label {}
+
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {}
+
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {}
+
+		.wsite-elements.wsite-footer h2,
+		.wsite-elements.wsite-footer .product-long .product-title,
+		.wsite-elements.wsite-footer .product-large .product-title,
+		.wsite-elements.wsite-footer .product-small .product-title {}
+
+		#wsite-title {
+			font-family: "Verdana" !important;
+			text-transform: uppercase !important;
+		}
+
+		.wsite-menu-default a {
+			font-family: "Ubuntu" !important;
+			font-weight: 700 !important;
+			text-transform: uppercase !important;
+		}
+
+		.wsite-menu a {}
+
+		.wsite-image div,
+		.wsite-caption {
+			font-family: "Coustard" !important;
+		}
+
+		.galleryCaptionInnerText {}
+
+		.fancybox-title {}
+
+		.wslide-caption-text {}
+
+		.wsite-phone {}
+
+		.wsite-headline,
+		.wsite-header-section .wsite-content-title {}
+
+		.wsite-headline-paragraph,
+		.wsite-header-section .paragraph {}
+
+		.wsite-button-inner {}
+
+		.wsite-not-footer blockquote {}
+
+		.wsite-footer blockquote {}
+
+		.blog-header h2 a {}
+
+		#wsite-content h2.wsite-product-title {}
+
+		.wsite-product .wsite-product-price a {}
+
+		@media screen and (min-width: 767px) {
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {}
+
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {}
+
+			.wsite-elements.wsite-footer div.paragraph,
+			.wsite-elements.wsite-footer p,
+			.wsite-elements.wsite-footer .product-block .product-title,
+			.wsite-elements.wsite-footer .product-description,
+			.wsite-elements.wsite-footer .wsite-form-field label,
+			.wsite-elements.wsite-footer .wsite-form-field label {}
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {}
+
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {}
+
+			.wsite-elements.wsite-footer h2,
+			.wsite-elements.wsite-footer .product-long .product-title,
+			.wsite-elements.wsite-footer .product-large .product-title,
+			.wsite-elements.wsite-footer .product-small .product-title {}
+
+			#wsite-title {}
+
+			.wsite-menu-default a {}
+
+			.wsite-menu a {}
+
+			.wsite-image div,
+			.wsite-caption {}
+
+			.galleryCaptionInnerText {}
+
+			.fancybox-title {}
+
+			.wslide-caption-text {}
+
+			.wsite-phone {}
+
+			.wsite-headline,
+			.wsite-header-section .wsite-content-title {}
+
+			.wsite-headline-paragraph,
+			.wsite-header-section .paragraph {}
+
+			.wsite-button-inner {}
+
+			.wsite-not-footer blockquote {}
+
+			.wsite-footer blockquote {}
+
+			.blog-header h2 a {}
+
+			#wsite-content h2.wsite-product-title {}
+
+			.wsite-product .wsite-product-price a {}
+
+			.float-my-children>* {
+				float: left;
+				margin-right: 5px;
+			}
+
+			.clearfix {
+				*zoom: 1
+					/* for IE */
+			}
+
+			.clearfix:before,
+			.clearfix:after {
+				content: " ";
+				display: table;
+			}
+
+			.clearfix:after {
+				clear: both;
+			}
+		}
+	</style>
+
+	<script>
+		var STATIC_BASE = '//cdn1.editmysite.com/';
+		var ASSETS_BASE = '//cdn2.editmysite.com/';
+		var STYLE_PREFIX = 'wsite';
+	</script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+	<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+	<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script>
+	<script type="text/javascript">_W.configDomain = "www.weebly.com";</script>
+	<script>_W.relinquish && _W.relinquish()</script>
+
+
+</head>
+
+<body class="no-header-page page-has-banner  wsite-theme-light  wsite-page-publications">
+	<div class="wrapper">
+		<div class="birdseye-header">
+			<div class="nav-wrap">
+				<div class="container">
+					<div class="logo"><span class="wsite-logo">
+
+							<a href="index.html">
+
+								<span id="wsite-title">Jianqing Liu</span>
+
+							</a>
+
+						</span></div>
+					<div class="nav desktop-nav">
+						<ul class="wsite-menu-default">
+							<li id="pg201573907284626506" class="wsite-menu-item-wrap">
+								<a href="index.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Home</font>
+								</a>
+
+							</li>
+							<li id="pg527973427117353684" class="wsite-menu-item-wrap">
+								<a href="lab.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Lab</font>
+								</a>
+
+							</li>
+							<li id="active" class="wsite-menu-item-wrap">
+								<a href="research.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Research</font>
+								</a>
+
+							</li>
+							<li id="pg805442045814651203" class="wsite-menu-item-wrap">
+								<a href="teaching.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Teaching</font>
+								</a>
+
+							</li>
+							<li id="pg134465023545905763" class="wsite-menu-item-wrap">
+								<a href="awards.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Awards</font>
+								</a>
+
+							</li>
+							<li id="pg713992104549235140" class="wsite-menu-item-wrap">
+								<a href="activity.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Activity</font>
+								</a>
+
+							</li>
+						</ul>
+					</div>
+					<label class="hamburger"><span></span></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-wrap">
+			<div class="container">
+				<div class="content-wrap">
+					<div id="wsite-content" class="wsite-elements wsite-not-footer">
+
+
+					</div>
+				</div>
+				<div class="clearfix float-my-children">
+					<img src="uploads/NSF_logo.png" width=100>
+					<div style="text-align:center;">
+						<br><br>
+						<strong>
+							<font color="#000000" size="5em">
+								ExpandQISE: Track 1: Virtual Quantum Networks: From Foundations to Field Tests
+							</font>
+						</strong>
+					</div>
+				</div>
+
+				<div class="wsite-spacer" style="height:50px;"></div>
+				<h2 class="wsite-content-title" style="text-align:left;">
+					<font color="#000000">
+						Project Synopsis
+					</font>
+				</h2>
+
+				<div>
+					<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+					<hr class="styled-hr" style="width:100%;">
+					</hr>
+					<br>
+					<div>
+						<!-- image one -->
+						<img src="uploads/vqn/vqn_overview.png" width=700 align="right" />
+						<!-- the text for the image one -->
+						<font size="4">
+							<font color="#000000"> &nbsp;&nbsp; &nbsp;&nbsp; The emergence of quantum networks has
+								sparked a technological revolution envisaged to shift the landscape of communication,
+								sensing, and computing in the forthcoming decades. While ongoing efforts in building
+								quantum networks are broad, immense, and even like ``arms race'', existing quantum
+								network systems are still local, small-scale, and application-specific
+								(e.g., designed for quantum key distribution), which is reminiscent of the era of
+								internet onset. Looking ahead, the expansion of quantum networks, if without thoughtful
+								planning, will inevitably lead us into the same pitfalls as classical
+								internet such as network ossification and resource wastes.
+								<br><br>
+								&nbsp;&nbsp; &nbsp;&nbsp; The goal of this project is to develop a general-purpose,
+								open-access, and programmable quantum network prototype for the quantum information
+								science and engineering (QISE) community to experiment new quantum technologies and
+								train teachers/students of all majors, thereby accomplishing the vision of coordinating
+								diverse research efforts and expanding the QISE workforce. The key methodology to be
+								applied is <strong>virtualization</strong> that will turn a physical quantum network
+								fabric into multiple independent software-controlled network overlays for concurrent
+								and hardware-agnostic network access. An overview of the proposed research & education
+								activities are displayed in Figure 1.
+								<div style="line-height:70%;">
+									<br>
+								</div>
+								&nbsp;&nbsp; &nbsp;&nbsp; (1): Establish the Foundation for VQNs: Architecture Design;
+								<div style="line-height:70%;">
+									<br>
+								</div>
+								&nbsp;&nbsp; &nbsp;&nbsp; (2): Access VQNs Efficiently: Protocol Design;
+								<div style="line-height:70%;">
+									<br>
+								</div>
+								&nbsp;&nbsp; &nbsp;&nbsp; (3): Implement and Evaluate the VQN (with Education
+								Integration).
+							</font>
+						</font>
+						<br><br>
+					</div>
+
+					<div>
+						<!-- image two -->
+						<img src="uploads/vqn/INQUIRE.png" width=520 align="right" />
+						<!-- text for the image two -->
+						<font size="4">
+							<font color="#000000"> &nbsp;&nbsp; &nbsp;&nbsp; This project will be based on a
+								quantum network testbed in the University of Arizona (UA), which was developed by
+								co-PI Zhang's lab and colleagues. The testbed is shown in Figure 2.
+								Specifically, the INQUIRE testbed consists of 14 network nodes residing in 6 buildings
+								across
+								the UA campus, connected by more than 100 optical fibers and a free-space
+								line-of-sight link, as shown in Figure 2a. At present, the key
+								functionalities of INQUIRE include the generation and distribution of entangled-photons,
+								remote access to single-photon detectors, and scheduling and routing of quantum
+								resources. As a precursor of VQNs, the INQUIRE testbed currently serves as a
+								quantum internet service provider (qISP) that is fully automated and centrally
+								managed by the Agilent iLab platform. Quantum-network users remotely log into the
+								iLab platform to request access to the quantum resources including entangled photons
+								and single-photon detectors, as illustrated by Figure 2b. The qISP
+								of INQUIRE shares, manages, and maintains quantum resources for a large number of
+								network users in a time-multiplexed manner. The capability qISP of INQUIRE can be
+								substantially enriched by the new VQN architecture, protocols, and applications to
+								be pursued in this project.
+							</font>
+						</font>
+					</div>
+					<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+				</div>
+
+
+				<!-- <div class="paragraph" style="text-align:left;"> -->
+
+				<div class="paragraph" style="text-align:left;">
+
+					<div class="wsite-spacer" style="height:50px;"></div>
+					<h2 class="wsite-content-title" style="text-align:left;">
+						<font color="#000000">
+							Personnel and Collaborators
+						</font>
+					</h2>
+
+					<div>
+						<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+						<hr class="styled-hr" style="width:100%;">
+						</hr>
+						<br>
+						<!-- here is for listing phd students -->
+						<div class="paragraph" style="text-align:left;">
+							<li>
+								<font color="#000000"><strong>PhD students</strong></font>
+							</li>
+						</div>
+
+						<!-- the first PHD student -->
+						<div>
+							<div class="wsite-multicol">
+								<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+									<table class="wsite-multicol-table">
+										<tbody class="wsite-multicol-tbody">
+											<tr class="wsite-multicol-tr">
+												<td class="wsite-multicol-col"
+													style="width:10.022304832714%; padding:0 15px;">
+
+													<div>
+														<div class="wsite-image wsite-image-border-border-width:0 "
+															style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+															<a>
+																<img src="uploads/anonymous.png" alt="Picture"
+																	style="width:auto;max-width:100%" />
+															</a>
+															<div style="display:block;font-size:90%"></div>
+														</div>
+													</div>
+												</td>
+												<td class="wsite-multicol-col"
+													style="width:73.977695167286%; padding:0 15px;">
+													<div class="paragraph" style="text-align:left;">
+														<font size="4">
+															<font color="#000000">Zhizhen Li (Fall 2022 -
+																)<br />MS., Computer Engineering, Georgia Institute of
+																Technology
+																<br />Email: zli92 at ncsu dot edu
+																<br />* in lab rotation
+															</font>
+														</font>
+													</div>
+								</div>
+								</td>
+								</tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div><br /><br />
+
+
+					<!-- the second PHD student -->
+					<div>
+						<div class="wsite-multicol">
+							<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+								<table class="wsite-multicol-table">
+									<tbody class="wsite-multicol-tbody">
+										<tr class="wsite-multicol-tr">
+											<td class="wsite-multicol-col"
+												style="width:10.022304832714%; padding:0 15px;">
+
+												<div>
+													<div class="wsite-image wsite-image-border-border-width:0 "
+														style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+														<a>
+															<img src="uploads/anonymous.png" alt="Picture"
+																style="width:auto;max-width:100%" />
+														</a>
+														<div style="display:block;font-size:90%"></div>
+													</div>
+												</div>
+											</td>
+											<td class="wsite-multicol-col"
+												style="width:73.977695167286%; padding:0 15px;">
+												<div class="paragraph" style="text-align:left;">
+													<font size="4">
+														<font color="#000000">Stuart Pelletier (Fall 2022 -
+															)<br />MS., Computer Science, NC State University
+															<br />Email: sopellet at ncsu dot edu
+															<br />* in lab rotation
+														</font>
+													</font>
+												</div>
+							</div>
+							</td>
+							</tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+				</div><br /><br />
+
+
+				<!-- here is for listing collaborators -->
+				<div class="paragraph" style="text-align:left;">
+					<li>
+						<font color="#000000"><strong>Collaborators</strong></font>
+					</li>
+				</div>
+
+
+				<!-- the first collaborator -->
+				<div>
+					<div class="wsite-multicol">
+						<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+							<table class="wsite-multicol-table">
+								<tbody class="wsite-multicol-tbody">
+									<tr class="wsite-multicol-tr">
+										<td class="wsite-multicol-col" style="width:10.022304832714%; padding:0 15px;">
+
+											<div>
+												<div class="wsite-image wsite-image-border-border-width:0 "
+													style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+													<a>
+														<img src="uploads/vqn/zzhang.jpeg" alt="Picture"
+															style="width:auto;max-width:100%" />
+													</a>
+													<div style="display:block;font-size:90%"></div>
+												</div>
+											</div>
+										</td>
+										<td class="wsite-multicol-col" style="width:73.977695167286%; padding:0 15px;">
+											<div class="paragraph" style="text-align:left;">
+												<font size="4">
+													<font color="#000000">Dr. Zheshen Zhang (co-PI)
+														<br />Associate Professor
+														<br />Department of Electrical Engineering and Computer Science
+														<br />University of Michigan
+														<br />Email: zszh at umich dot edu
+													</font>
+												</font>
+											</div>
+						</div>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+		</div>
+		<div class="paragraph" style="text-align:left;">
+		</div>
+
+		<div class="paragraph" style="text-align:left;">
+
+			<div class="wsite-spacer" style="height:50px;"></div>
+			<h2 class="wsite-content-title" style="text-align:left;">
+				<font color="#000000">
+					Research Progress
+				</font>
+			</h2>
+
+			<div>
+				<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+				<hr class="styled-hr" style="width:100%;">
+				</hr>
+				<br>
+				<!-- here is for listing publications and presentations -->
+				<div class="paragraph" style="text-align:left;">
+					<li>
+						<font color="#000000">
+							<font size="4"><strong>Publications</strong>
+								<!-- <ul>
+										<font color="#000000">[1]</font>
+										<font color="#000000">Two Birds with One Stone: Differential Privacy by
+											Low-power SRAM Memory</font><br />
+										<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>*, N.
+											Gong*, and H. Das</font>, <em>
+											<font color="#000000">IEEE Transactions on Information Forensics and
+												Security </font>
+										</em>
+										<font color="#000fff" style="font-weight:bold">(IEEE TIFS), </font>
+										<font color="#000000">Under Review. <i>(*equal contribution)</i></font>
+										<div style="line-height:120%;">
+											<br>
+										</div>
+
+										<font color="#000000">[2]</font>
+										<font color="#000000">Privacy Preservation in Multi-Cloud Secure Data Fusion for
+											Infectious-Disease Analysis</font><br />
+										<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, C.
+											Zhang, K. Xue, and Y. Fang</font>, <em>
+											<font color="#000000">to appear at IEEE Transactions on Mobile Computing
+											</font>
+										</em>
+										<font color="#000fff" style="font-weight:bold">(IEEE TMC). </font>
+									</ul> -->
+							</font>
+						</font>
+					</li>
+				</div>
+
+
+
+				<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+			</div>
+			<div class="paragraph" style="text-align:left;">
+			</div>
+
+
+			<div class="wsite-spacer" style="height:50px;"></div>
+			<h2 class="wsite-content-title" style="text-align:left;">
+				<font color="#000000">
+					Education and Outreach Activities
+				</font>
+			</h2>
+
+			<div>
+				<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+				<hr class="styled-hr" style="width:100%;">
+				</hr>
+				<br>
+				<!-- here is for listing course and outreach activities -->
+				<div class="paragraph" style="text-align:left;">
+					<li>
+						<font color="#000000">
+							<font size="4"><strong>New Curriculum</strong>
+								<ul>
+									<div style="line-height:2">
+										<font color="#000000">CSC/ECE 791-06: Quantum Communications and Network
+										</font>
+									</div>
+									<div style="line-height:2">
+										<font color="#000000"><strong>Course Website:</strong>
+											<a href="http://www.ece.uah.edu/~jl0152/uploads/csc791quantum.pdf">[this
+												link]</a>
+										</font>
+									</div>
+									<div style="line-height:1.5">
+										<font color="#000000"><strong>Description:</strong> Quantum communications
+											is no longer
+											a myth but a revolutionary technology that is just around the corner.
+											This
+											course covers the cutting-edge topics of quantum communications and
+											network
+											(QCN). The objective of this course is to provide students with the
+											theoretical foundation, simulation methods, and research frontiers of
+											QCN
+											through pedagogical activities such as lecturing, paper reading and
+											presentation,
+											and projects.
+											<br />&nbsp; &nbsp; &nbsp; The covered topics by this course include
+											(but not limited
+											to) quantum gates/operations, entanglement, teleportation, error
+											control, purification,
+											metrics for performance assessment, optical channel modeling, network
+											graphs and quantum
+											graph states, and quantum applications.
+										</font>
+									</div>
+									<div style="line-height:2">
+										<font color="#000000"><strong>Semesters of Offering:</strong> Fall 2022
+										</font>
+									</div>
+									<div style="line-height:2">
+										<font color="#000000"><strong>Course Outcome:</strong> pending</font>
+									</div>
+
+								</ul>
+							</font>
+						</font>
+					</li>
+				</div>
+
+
+				<!-- here is for listing course and outreach activities -->
+				<div class="paragraph" style="text-align:left;">
+					<li>
+						<font color="#000000">
+							<font size="4"><strong>Local K-12 Outreach Activities</strong>
+
+							</font>
+						</font>
+					</li>
+				</div>
+
+
+
+				<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+			</div>
+			<div class="paragraph" style="text-align:left;"></div>
+		</div>
+
+
+		<div class="wsite-spacer" style="height:50px;"></div>
+		<h2 class="wsite-content-title" style="text-align:left;">
+			<font color="#000000">
+				Disclaimer
+			</font>
+		</h2>
+
+		<div>
+			<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+			<hr class="styled-hr" style="width:100%;">
+			</hr>
+			<br>
+			<!-- here is for listing course and outreach -->
+			<div class="paragraph" style="text-align:left;">
+				<font color="#000000">
+					<font size="4">Any opinions, findings, and conclusions or recommendations expressed in this
+						material are those of the author(s) and do not necessarily reflect the views of the National
+						Science Foundation.</font>
+				</font>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+	</div>
+	</div>
+	</div><!-- end main-wrap -->
+
+	<div class="footer-wrap">
+		<div class="container">
+			<div class="footer">
+				<div class='wsite-elements wsite-footer'>
+					<div class="paragraph" style="text-align:center;">Copyright &copy; Jianqing Liu | <em>"You must be
+							the change you wish to see in the world."</em></div>
+				</div>
+			</div>
+		</div><!-- end container -->
+	</div><!-- end footer-wrap -->
+	</div><!-- /.wrapper -->
+
+	<div id="navMobile" class="nav mobile-nav">
+		<ul class="wsite-menu-default">
+			<li id="pg201573907284626506" class="wsite-menu-item-wrap">
+				<a href="index.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Home</font>
+				</a>
+
+			</li>
+			<li id="pg527973427117353684" class="wsite-menu-item-wrap">
+				<a href="lab.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Lab</font>
+				</a>
+
+			</li>
+			<li id="active" class="wsite-menu-item-wrap">
+				<a href="research.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Research</font>
+				</a>
+
+			</li>
+			<li id="pg805442045814651203" class="wsite-menu-item-wrap">
+				<a href="teaching.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Teaching</font>
+				</a>
+
+			</li>
+			<li id="pg134465023545905763" class="wsite-menu-item-wrap">
+				<a href="awards.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Awards</font>
+				</a>
+
+			</li>
+			<li id="pg713992104549235140" class="wsite-menu-item-wrap">
+				<a href="activity.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Activity</font>
+				</a>
+
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="files/theme/plugins.js"></script>
+	<script type="text/javascript" src="files/theme/custom.js"></script>
+
+	<!-- Start of StatCounter Code for Weebly -->
+	<script type="text/javascript">
+		var sc_project = 10803653;
+		var sc_invisible = 1;
+		var sc_security = "30e41485";
+		var scJsHost = (("https:" == document.location.protocol) ?
+			"https://secure." : "http://www.");
+		document.write("<sc" + "ript type='text/javascript' src='" +
+			scJsHost +
+			"statcounter.com/counter/counter.js'></" + "script>");
+	</script>
+	<noscript>
+		<div class="statcounter"><a title="weebly
+analytics" href="http://statcounter.com/weebly/" target="_blank"><img class="statcounter"
+					src="http://c.statcounter.com/10803653/0/30e41485/1/" alt="weebly analytics"></a></div>
+	</noscript>
+	<!-- End of StatCounter Code for Weebly -->
+</body>
+
+</html>
