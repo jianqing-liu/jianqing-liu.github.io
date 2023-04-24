@@ -248,6 +248,21 @@
 		}
 	</style>
 
+	<style>
+		.container {
+			align-items: center;
+			justify-content: center;
+		}
+
+		img {
+			max-width: 25%;
+			max-height: 15%;
+			float: left;
+			padding-right: 25px;
+			padding-bottom: 6px;
+		}
+	</style>
+
 	<script>
 		var STATIC_BASE = '//cdn1.editmysite.com/';
 		var ASSETS_BASE = '//cdn2.editmysite.com/';
@@ -259,21 +274,6 @@
 	<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script>
 	<script type="text/javascript">_W.configDomain = "www.weebly.com";</script>
 	<script>_W.relinquish && _W.relinquish()</script>
-	<!-- <script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
-	var IS_ARCHIVE = 1;
-	
-	function initFlyouts(){
-		initPublishedFlyoutMenus(
-			[{"id":"201573907284626506","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"527973427117353684","title":"Research","url":"research.html","target":"","nav_menu":false,"nonclickable":false},{"id":"149021219515022802","title":"Publications","url":"publications.html","target":"","nav_menu":false,"nonclickable":false},{"id":"805442045814651203","title":"Teaching","url":"teaching.html","target":"","nav_menu":false,"nonclickable":false},{"id":"134465023545905763","title":"Awards","url":"awards.html","target":"","nav_menu":false,"nonclickable":false},{"id":"713992104549235140","title":"Activity","url":"activity.html","target":"","nav_menu":false,"nonclickable":false}],
-			"149021219515022802",
-			'',
-			'active',
-			false,
-			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
-			{}
-		)
-	}
-</script> -->
 
 
 </head>
@@ -312,6 +312,12 @@
 								</a>
 
 							</li>
+							<li id="pg777992104549235140" class="wsite-menu-item-wrap">
+								<a href="publications.html" class="wsite-menu-item">
+									<font style="font-family:verdana;">Publications</font>
+								</a>
+
+							</li>
 							<li id="pg805442045814651203" class="wsite-menu-item-wrap">
 								<a href="teaching.html" class="wsite-menu-item">
 									<font style="font-family:verdana;">Teaching</font>
@@ -346,354 +352,224 @@
 					</div>
 				</div>
 
+
+				<!-- Here to add the title of a project: -->
 				<h2 class="wsite-content-title" style="text-align:left;">
 					<font color="#000000">
-						Active Projects
+						Quantum Information, Communications and Networking
 					</font>
 				</h2>
+
+				<!-- Here to add the image and description of the above project: -->
+
+				<body>
+					<div class="container">
+						<div class="image">
+							<img src="uploads/research/quantum.jpeg">
+						</div>
+						<div style="font-family: 'Open Sans', sans-serif; font-weight: lighter; font-size: 17.5px">
+							<font color="#000000">
+								<font style="font-weight:bold">Overview:</font>
+								While classical information is represented by bits that can have a value of either 0 or
+								1, quantum
+								information is represented by qubits, which can exist in a superposition of 0 and 1 at
+								the same time.
+								Quantum communications and networking refers to the transmission of qubits between two
+								or more parties using
+								unique quantum phenomena like entanglement that are not available to classical networks.
+								The recent development of
+								quantum networks has quickly grown in scale and sparked a technological revolution in
+								novel applications including
+								quantum sensing and quantum computing.
+								<div style="height: 10px; overflow: hidden; width: 50%;"></div>
+								This project is supported by NSF under grant <a
+									href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2304118&HistoricalAwards=false">OMA-2304118</a>.
+								For more information, please refer to the project page here: <a
+									href="vqn.html">Link</a>.
+								<div style="height: 10px; overflow: hidden; width: 50%;"></div>
+								<font style="font-weight:bold">Selected Publications:</font> <br />
+								[1] "Qubit Recycling in Entanglement Distillation", S. Pelletier, R. Yu, J. Liu, <em>
+									IEEE Int. Conf. on Quantum Computing and Engineering </em>, Seattle, USA,
+								2023.<br />
+								[2] "On Topology Design for the Quantum Internet", R. Yu, R. Dutta, J. Liu, <em>
+									IEEE Network </em>, Vol. 36, no. 5, pp. 64-70, 2022.
+							</font>
+						</div>
+					</div>
+				</body>
+
+				<!-- Here it the divider to be used between projects: -->
+				<div class="wsite-spacer" style="height:50px;"></div>
 				<div>
-					<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+					<div style="height: 50px; overflow: hidden; width: 100%;"></div>
 					<hr class="styled-hr" style="width:100%;">
 					</hr>
 					<div style="height: 10px; overflow: hidden; width: 100%;"></div>
 				</div>
-				<div class="paragraph" style="text-align:left; font-size: 17.5px">
 
-					<div class="clearfix float-my-children">
-						<img src="uploads/NSF_logo.png" width=60>
-						<div>
-							<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2304118&HistoricalAwards=false">
-								ExpandQISE: Track 1: Virtual Quantum Networks: From Foundations to Field Tests
-							</a>
-							<br />
+
+				<!-- Here to add another project: -->
+				<h2 class="wsite-content-title" style="text-align:left;">
+					<font color="#000000">
+						Dynamic Spectrum Access, Cross-Technology and Cross-Application Co-Existence
+					</font>
+				</h2>
+
+				<body>
+					<div class="container">
+						<div class="image">
+							<img src="uploads/research/network.jpeg">
+						</div>
+						<div style="font-family: 'Open Sans', sans-serif; font-weight: lighter; font-size: 17.5px">
 							<font color="#000000">
-								Role: PI. Period: 09.2022 ~ 08.2025. Sponsor: National Science Foundation.
+								<font style="font-weight:bold">Overview:</font>
+								Radio frequency spectrum is a limited and valuable resource that is becoming
+								increasingly congested. With the proliferation of wireless devices and applications, the
+								demand for spectrum is outpacing the supply, leading to
+								spectrum scarcity in many areas. This scarcity can cause interference, congestion, and
+								poor quality of service for wireless users. Dynamic spectrum access (DSA) offers a
+								solution to this problem by
+								allowing for more efficient and flexible use of the spectrum. In addition to spectrum
+								management like DSA, distributed network control to reconcile different wireless
+								technologies
+								from different service providers is also a critical yet open research problem.
+								<div style="height: 10px; overflow: hidden; width: 50%;"></div>
+								This project is supported by NSF CAREER Award under grant <a
+									href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2312738&HistoricalAwards=false">ECCS-2312738</a>.
+								For more information, please refer to the project page here: <a
+									href="career.html">Link</a>.
+								<div style="height: 10px; overflow: hidden; width: 50%;"></div>
+								<font style="font-weight:bold">Selected Publications:</font> <br />
+								[1] "LEONS: Multi-Domain Network Slicing
+								Configuration and Orchestration for
+								Satellite-Terrestrial Edge Computing Networks", H. Esmat, B. Lorenzo, J. Liu, <em>
+									IEEE Int. Conf. on Communications </em>, Rome, ITA,
+								2023.<br />
+								[2] "Optimizing IoT energy efficiency on edge (EEE): A cross-layer design in a cognitive
+								mesh network", J. Liu, Y. Pang, H. Ding, Y. Cai, H. Zhang, Y. Fang<em>
+									IEEE Transactions on Wireless Communications </em>, Vol. 20, no. 4, pp. 2472-2486,
+								2020.
 							</font>
-							<a href="vqn.html">
-								Project Webpage
-							</a>
-
 						</div>
 					</div>
+				</body>
 
-					<p></p>
-					<div class="clearfix float-my-children">
-						<img src="uploads/NSF_logo.png" width=60>
-						<div>
-							<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2211214&HistoricalAwards=false">
-								Collaborative Research: CNS Core: Small: Privacy by Memory Design
-							</a>
-							<br />
+
+				<!-- Here it the divider to be used between projects: -->
+				<div class="wsite-spacer" style="height:50px;"></div>
+				<div>
+					<div style="height: 50px; overflow: hidden; width: 100%;"></div>
+					<hr class="styled-hr" style="width:100%;">
+					</hr>
+					<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+				</div>
+
+
+				<!-- Here to add another project: -->
+				<h2 class="wsite-content-title" style="text-align:left;">
+					<font color="#000000">
+						Differential Privacy: Algorithm Development and Hardware Realization
+					</font>
+				</h2>
+
+				<body>
+					<div class="container">
+						<div class="image">
+							<img src="uploads/research/dp.jpg">
+						</div>
+						<div style="font-family: 'Open Sans', sans-serif; font-weight: lighter; font-size: 17.5px">
 							<font color="#000000">
-								Role: Lead-PI. Period: 08.2022 ~ 07.2025. Sponsor: National Science Foundation.
+								<font style="font-weight:bold">Overview:</font>
+								Differential privacy has become widely accepted as a rigorous and usable
+								privacy-enhancing technique in recent years as the amount of
+								data collected about individuals has exploded, and concerns about privacy have grown. It
+								is now used in a variety of applications, including healthcare, finance, and social
+								media, where sensitive information is often collected and analyzed. The distinctive
+								significance of differential privacy lies in its strong protection of an individual's
+								data while still allowing for valuable data analysis. However, recent studies have
+								revealed side-channel attacks to differential privacy mechanisms, highlighting the need
+								for further investigation on this research problem.
+								<div style="height: 10px; overflow: hidden; width: 50%;"></div>
+								This project is supported by NSF under grant <a
+									href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2247273&HistoricalAwards=false">CNS-2247273</a>.
+								For more information, please refer to the project page here: <a
+									href="dpmem.html">Link</a>.
+								<div style="height: 10px; overflow: hidden; width: 50%;"></div>
+								<font style="font-weight:bold">Selected Publications:</font> <br />
+								[1] "Two Birds with One Stone: Differential Privacy by Low-power SRAM Memory", J. Liu,
+								N. Gong, H. Das, <em>
+									Network and Distributed System Security Symposium </em>, San Diego, USA,
+								2023.<br />
+								[2] "Epic: A differential privacy framework to defend smart homes against internet
+								traffic analysis", J. Liu, C. Zhang, Y. Fang, <em>
+									IEEE Internet of Things </em>, Vol. 5, no. 2, pp. 1206-1217, 2018.
 							</font>
-							<a href="dpmem.html">
-								Project Webpage
-							</a>
-
 						</div>
 					</div>
+				</body>
+				<!-- Here it the divider to be used between projects: -->
+				<div class="wsite-spacer" style="height:50px;"></div>
+				<div>
+					<div style="height: 50px; overflow: hidden; width: 100%;"></div>
+					<hr class="styled-hr" style="width:100%;">
+					</hr>
+					<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+				</div>
 
-					<p></p>
-					<div class="clearfix float-my-children">
-						<img src="uploads/NSF_logo.png" width=60>
-						<div>
-							<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2047484&HistoricalAwards=false">
-								CAREER: Taming Wireless Devices Cross-Layer Errors with Assistive Networked Edges
-							</a>
-							<br />
+
+				<!-- Here to add another project: -->
+				<h2 class="wsite-content-title" style="text-align:left;">
+					<font color="#000000">
+						Hardware-Software Co-design for IoT Security and Communications
+					</font>
+				</h2>
+
+				<body>
+					<div class="container">
+						<div class="image">
+							<img src="uploads/research/iot.png">
+						</div>
+						<div style="font-family: 'Open Sans', sans-serif; font-weight: lighter; font-size: 17.5px">
 							<font color="#000000">
-								Role: Sole-PI. Period: 03.2021 ~ 02.2026. Sponsor: National Science Foundation.
+								<font style="font-weight:bold">Overview:</font>
+								IoT represents a fundamental shift in the way we interact with the physical world.
+								It collects vast amounts of data that can be
+								used to create new applications and services, improve efficiency, and provide new
+								insights. In general, IoT devices are designed to be lightweight in terms of power
+								consumption, memory, and processing capabilities, as they are often small,
+								battery-powered, and designed for simple tasks. In a contending communication
+								environment, the lightweight nature of IoT devices can often result in a lack of
+								intelligent maneuverability, which can lead to operational failures. My lab strives to
+								unlock the potential of IoT devices by improving their hardware and software
+								functionality collectively.
+								<div style="height: 10px; overflow: hidden; width: 50%;"></div>
+								<font style="font-weight:bold">Selected Publications:</font> <br />
+								[1] "A Secure and Efficient Protocol for LoRa Using Cryptographic Hardware
+								Accelerators", S. Puckett, J. Liu, S. Yoo, T. Morris, <em>
+									IEEE Internet of Things Journal </em>, 2023.<br />
+								[2] "A Robust Algorithm for Sniffing BLE Long-Lived Connections in Real-time", S.
+								Sarkar, J. Liu, E. Jovanov, <em>
+									IEEE Global Communications Conference </em>, Waikoloa, USA, 2019.
 							</font>
-							<a href="career.html">
-								Project Webpage
-							</a>
-
 						</div>
 					</div>
+				</body>
 
 
-					<div class="wsite-spacer" style="height:50px;"></div>
-					<h2 class="wsite-content-title" style="text-align:left;">
-						<font color="#000000">
-							Past Projects
-						</font>
-					</h2>
-					<div>
-						<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-						<hr class="styled-hr" style="width:100%;">
-						</hr>
-						<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-					</div>
+			</div>
+		</div>
+	</div><!-- end main-wrap -->
 
-					<div class="paragraph" style="text-align:left; font-size: 17.5px">
-						<div class="clearfix float-my-children">
-							<img src="uploads/nist.jpeg" width=60>
-							<div>
-								<font color="#000000">
-									NCCoE Cybersecurity of Bio-Genomic Data.
-								</font>
-								<br />
-								<font color="#000000">
-									Role: Co-PI (industrial collaborator: <a
-										href="https://www.hudsonalpha.org/">HudsonAlpha</a>). Period: 08.2021 ~ 08.2022.
-									Sponsor: National Institute of Standards and Technology.
-								</font>
-
-							</div>
-						</div>
-
-						<p></p>
-						<div class="clearfix float-my-children">
-							<img src="uploads/uah.png" width=60>
-							<div>
-								<font color="#000000">
-									Secure Multi-party Computation Across Internet Clouds for Public Health.
-								</font>
-								<br />
-								<font color="#000000">
-									Role: Sole-PI. Period: 06.2021 ~ 05.2022. Sponsor: University of Alabama in
-									Huntsville.
-								</font>
-
-							</div>
-						</div>
-
-						<p></p>
-						<div class="clearfix float-my-children">
-							<img src="uploads/uah.png" width=60>
-							<div>
-								<font color="#000000">
-									Physical-layer Emulation for Cross-Technology Communications.
-								</font>
-								<br/>
-									<font color="#000000">
-										Role: Sole-PI. Period: 01.2019 ~ 07.2019. Sponsor: University of Alabama in
-										Huntsville.
-									</font>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="wsite-spacer" style="height:50px;"></div>
-					<h2 class="wsite-content-title" style="text-align:left;">
-						<font color="#000000">
-							Selected Papers in Refereed Journals
-						</font>
-						<a href="publications.html">
-							<u>
-								<font color="#FFA500" size="4em">
-									(Full List)
-								</font>
-							</u>
-						</a>
-					</h2>
-
-					<div>
-						<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-						<hr class="styled-hr" style="width:100%;">
-						</hr>
-						<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-					</div>
-
-					<div class="paragraph" style="text-align:left; font-size: 17.5px">
-
-						<font color="#000000">[7]</font>
-						<font color="#000000">Empirical Optimization on Post-Disaster Communication Restoration for
-							Social Equality</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, S. Dong, and T.
-							Morris</font>, <em>
-							<font color="#000000">IEEE Transactions on Network Science and Engineering </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE TNSE), </font>
-						<font color="#000000">Under Review.</font><br /><br />
-
-						<font color="#000000">[6]</font>
-						<font color="#000000">Privacy Preservation in Multi-Cloud Secure Data Fusion for
-							Infectious-Disease Analysis</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, C. Zhang, K. Xue,
-							and Y. Fang</font>, <em>
-							<font color="#000000">to appear at IEEE Transactions on Mobile Computing </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE TMC), </font><br /><br />
-
-						<font color="#000000">[5]</font>
-						<font color="#000000">Optimizing IoT Energy Efficiency on Edge (EEE): a Cross-layer Design
-							in a Cognitive Mesh Network</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, Y. Pang, H. Ding,
-							Y. Cai, H. Zhang, and Y. Fang</font>, <em>
-							<font color="#000000">IEEE Transactions on Wireless Communications </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE TWC), </font>
-						<font color="#000000">Vol. 20, no. 4, pp. 2472-2486, Apr. 2021.</font><br /><br />
-
-						<font color="#000000">[4]</font>
-						<font color="#000000">DPavatar: A Real-Time Location Protection Framework for Incumbent
-							Users in Cognitive Radio Networks</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, C. Zhang, B.
-							Lorenzo, and Y. Fang</font>, <em>
-							<font color="#000000">IEEE Transactions on Mobile Computing </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE TMC), </font>
-						<font color="#000000">Vol. 19, no. 3, pp.552-565, Mar. 2020.</font><br /><br />
-
-						<font color="#000000">[3]</font>
-						<font color="#000000">EPIC: A Differential Privacy Framework to Defend Smart Homes Against
-							Internet Traffic Analysis</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, C. Zhang, and Y.
-							Fang</font>, <em>
-							<font color="#000000">IEEE Internet of Things Journal </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE IOT-J), </font>
-						<font color="#000000">Vol. 5, no. 2, pp. 1206-1217, Apr. 2018.</font><br /><br />
-
-						<font color="#000000">[2]</font>
-						<font color="#000000">An Energy-Efficient Strategy for Secondary Users in Cooperative
-							Cognitive Radio Networks for Green Communications</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, H. Ding, Y. Cai,
-							H. Yue, Y. Fang, and S. Chen</font>, <em>
-							<font color="#000000">IEEE Journal on Selected Areas in Communications </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE JSAC), </font>
-						<font color="#000000">Vol. 34, no. 12, pp. 3195-3207, Dec. 2016.</font><strong>
-							<font color="#ff0000"> (IEEE TCGCC Best Journal Paper Award).</font>
-						</strong><br /><br />
-
-						<font color="#000000">[1]</font>
-						<font color="#000000">UWB BPF with Triple Notched bands Using Novel Dual-mode SIR and
-							Asymmetrical Coupling Structure</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, K. Song, and Y.
-							Fan</font>, <em>
-							<font color="#000000">Journal of ElectroMagnetic Waves and Applications </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(JEMWA), </font>
-						<font color="#000000">Vol. 26, no. 16, pp. 2112-2120, Nov. 2012.</font><br /><br />
-					</div>
-
-
-					<div class="wsite-spacer" style="height:50px;"></div>
-					<h2 class="wsite-content-title" style="text-align:left;">
-						<font color="#000000">
-							Selected Papers in Refereed Conferences
-						</font>
-						<a href="publications.html">
-							<u>
-								<font color="#FFA500" size="4em">
-									(Full List)
-								</font>
-							</u>
-						</a>
-					</h2>
-
-					<div>
-						<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-						<hr class="styled-hr" style="width:100%;">
-						</hr>
-						<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-					</div>
-
-					<div class="paragraph" style="text-align:left; font-size: 17.5px">
-						<font color="#000000">[7]</font>
-						<font color="#000000">An Efficient Data Aggregation Scheme with Local Differential Privacy
-							in Smart Grid</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; N. Gai, K. Xue, P. He, B. Zhu, <strong>J.
-								Liu</strong>, and D. He</font>, <em>
-							<font color="#000000">The 16th International Conference on Mobility, Sensing and
-								Networking </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE MSN'20), </font>
-						<font color="#000000">Tokyo, Japan, 2020 </font> <strong>
-							<font color="#ff0000"> (Best Track Paper Award).</font>
-						</strong><br /><br />
-
-						<font color="#000000">[6]</font>
-						<font color="#000000">STNDN: Link Aware Segmented Transmission for Named Data Networking
-						</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; J. Qin, K. Xue, Y. Chen, W. Wei, <strong>J.
-								Liu</strong>, and H. Yue</font>, <em>
-							<font color="#000000">IEEE International Conference on Hot Information-Centric
-								Networking </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE HotICN'19), </font>
-						<font color="#000000">Chongqing, China, 2019 </font> <strong>
-							<font color="#ff0000">(Best Paper Award).</font>
-						</strong><br /><br />
-
-						<font color="#000000">[5]</font>
-						<font color="#000000">A Robust Algorithm for Sniffing BLE Long-Lived Connections in
-							Real-time <a href="https://arxiv.org/abs/1907.12782" target="_blank">
-								<font color="#FF7F50">[PDF]</font>
-							</a> <a href="https://github.com/sopan-sarkar/ubertooth" target="_blank">
-								<font color="#FF7F50">[Code]</font>
-							</a></font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; S. Sarkar, <strong>J. Liu</strong>, and E.
-							Jovanov</font>, <em>
-							<font color="#000000">IEEE Global Communications Conference </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE GLOBECOM'19), </font>
-						<font color="#000000">Hawaii, USA, 2019</font><br /><br />
-
-						<font color="#000000">[4]</font>
-						<font color="#000000">A Cloud-based Secure and Privacy-Preserving Clustering Analysis of
-							Infectious Disease</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, Y. Hu, H. Yue, Y.
-							Gong, and Y. Fang </font>, <em>
-							<font color="#000000">IEEE Symposium on Privacy Aware Computing </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE PAC'18), </font>
-						<font color="#000000">Washington D.C., USA, 2018.</font><br /><br />
-
-						<font color="#000000">[3]</font>
-						<font color="#000000">Policy-based Privacy-Preserving Scheme for Primary Users in
-							Database-driven Cognitive Radio Networks</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, C. Zhang, H.
-							Ding, H. Yue, and Y. Fang</font>, <em>
-							<font color="#000000">IEEE Global Communications Conference </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE GLOBECOM'16), </font>
-						<font color="#000000">Washington D.C., USA, 2016.</font><br /><br />
-
-						<font color="#000000">[2]</font>
-						<font color="#000000">An Energy Efficient Cooperative Strategy for Secondary Users in
-							Cognitive Radio Networks</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, H. Yue, H. Ding,
-							P. Si, and Y. Fang</font>, <em>
-							<font color="#000000">IEEE Global Communications Conference </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(IEEE GLOBECOM'15), </font>
-						<font color="#000000">San Diego, USA, 2015.</font><br /><br />
-
-						<font color="#000000">[1]</font>
-						<font color="#000000">Ultra-Wideband (UWB) Bandpass Filter with Inductance-Loaded Y-Shaped
-							Multiple-Mode Resonator</font><br />
-						<font color="#000000">&nbsp; &nbsp; &nbsp; &nbsp; <strong>J. Liu</strong>, K. Song, T. Pan,
-							J. Zha, Y. Fan, and C. Zhong</font>, <em>
-							<font color="#000000">IEEE International Workshop on Microwave &amp Millimeter Wave
-								Circuits &amp System Technology </font>
-						</em>
-						<font color="#000fff" style="font-weight:bold">(MMWCST'12), </font>Chengdu, China, 2012
-						<strong>
-							<font color="#ff0000">(Best Paper Award).</font>
-						</strong></font>
-						</font>
-
-					</div>
-					<!-- </div> -->
+	<div class="footer-wrap">
+		<div class="container">
+			<div class="footer">
+				<div class='wsite-elements wsite-footer'>
+					<div class="paragraph" style="text-align:center;">Copyright &copy; Jianqing Liu | <em>"You must
+							be the change you wish to see in the world."</em></div>
 				</div>
 			</div>
-		</div><!-- end main-wrap -->
-
-		<div class="footer-wrap">
-			<div class="container">
-				<div class="footer">
-					<div class='wsite-elements wsite-footer'>
-						<div class="paragraph" style="text-align:center;">Copyright &copy; Jianqing Liu | <em>"You must
-								be the change you wish to see in the world."</em></div>
-					</div>
-				</div>
-			</div><!-- end container -->
-		</div><!-- end footer-wrap -->
+		</div><!-- end container -->
+	</div><!-- end footer-wrap -->
 	</div><!-- /.wrapper -->
 
 	<div id="navMobile" class="nav mobile-nav">
@@ -713,6 +589,12 @@
 			<li id="active" class="wsite-menu-item-wrap">
 				<a href="research.html" class="wsite-menu-item">
 					<font style="font-family:verdana;">Research</font>
+				</a>
+
+			</li>
+			<li id="pg777992104549235140" class="wsite-menu-item-wrap">
+				<a href="publications.html" class="wsite-menu-item">
+					<font style="font-family:verdana;">Publications</font>
 				</a>
 
 			</li>
